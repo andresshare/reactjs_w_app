@@ -9,7 +9,7 @@ from './WeatherData'
 
 const  WeatherLocation = () =>(
     <div>
-        <Location></Location>
+        <Location city={"Medellin"}></Location>
         <WeatherData></WeatherData>
     </div>
 )
