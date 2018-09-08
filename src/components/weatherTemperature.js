@@ -1,8 +1,23 @@
 import React from 'react'
-const weatherTemperature =()=>
+
+import WeatherIcons 
+from 'react-weathericons';
+
+const getWeatherIcon = weatherState =>{
+    switch (weatherState) {
+        case "cloud":
+            return <WeatherIcons name="cloud" size="2x" />
+        default:
+            return <WeatherIcons name="sleet" size="2x" />
+            break;
+    }
+}
+const weatherTemperature =({temperature,weatherState})=>
 (
     <div>
-        <span>25°</span>
+        {getWeatherIcon(weatherState)}
+         
+        <span>{`${temperature} C°`} </span>
     </div>
 )
 

@@ -8,7 +8,7 @@ from './weatherTemperature'
 
 const WeatherData = () => (
     <div>
-        <WeatherTemperature  ></WeatherTemperature>
+        <WeatherTemperature temperature={20} ></WeatherTemperature>
         <WeatherExtraInfo humidity={80} wind={"10/ms"} > </WeatherExtraInfo>
         
     </div>
